@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grid practice</title>
+        <style>
+            .gridDiv {
+                display: grid;
+                grid-template-columns: 100px 100px 1fr;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 0;
+            }
+
+            .profile {
+                width: 100%;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 15px;
+            }
+            .mutual-friends-row {
+                display: grid;
+                grid-template-columns: 36px 1fr;
+                align-items: center;
+            }
+            .mutual-friend-picture {    
+                width: 100%;
+                
+            }
+            .name {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .profile-picture {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+            .add-friend-btn {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+
+        <div class="grid">
+            <div class="profile">
+                <img class="profile-picture" src="./assets/hq720_05.jpg" alt="">
+                <p class="name">Oliver</p>
+                <div class="mutual-friends-row">
+                    <img class="mutual-friend-picture" src="./assets/channel-profile/channels4_profile_03.jpg" alt="">
+                    <p class="mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="add-friend-btn">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="./assets/hq720_05.jpg" alt="">
+                <p class="name">Oliver</p>
+                <div class="mutual-friends-row">
+                    <img class="mutual-friend-picture" src="./assets/channel-profile/channels4_profile_03.jpg" alt="">
+                    <p class="mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="add-friend-btn">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="gridDiv">
+            <div style="background-color: rgb(210, 99, 99)">
+                100px
+                <p>Hello world</p>
+            </div>
+            <div style="background-color: rgba(255, 132, 32, 0.901)">100px</div>
+            <div style="background-color: rgb(141, 145, 195)">100px</div>
+        </div>
+
+        <div
+            style="
+                display: grid;
+                grid-template-columns: 100px 100px 1fr 1fr;
+                margin-top: 30px;
+            "
+        >
+            <div style="background-color: rgb(210, 99, 99)">
+                100px
+                <p>Hello world</p>
+            </div>
+            <div style="background-color: rgba(255, 132, 32, 0.901)">100px</div>
+            <div style="background-color: rgb(141, 145, 195)">1fr</div>
+            <div style="background-color: rgba(255, 132, 32, 0.901)">1fr</div>
+        </div><br>
+
+        <div
+            style="
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 15px;
+                row-gap: 15px;
+            "
+        >
+            <div style="background-color: rgba(255, 132, 32, 0.901); height: 200px;">1fr</div>
+            <div style="background-color: rgb(141, 145, 195);height: 200px;">1fr</div>
+            <div style="background-color: rgba(255, 132, 32, 0.901); height: 200px;">1fr</div>
+            <div style="background-color: rgb(141, 145, 195); height: 200px;">1fr</div>
+            <div style="background-color: rgba(255, 132, 32, 0.901); height: 200px;">1fr</div>
+            <div style="background-color: rgb(141, 145, 195); height: 200px;">1fr</div>
+
+
+        </div>
+
+
+        <!-- Create a grid with 2 columns with widths of 200px and 75px -->
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 200px 200px 75px;
+            column-gap: 5px;
+        ">
+            <div style="background-color: rgb(255,132,32); height: 200px;"></div>
+            <div style="background-color: rgb(69, 206, 176); height: 200px;"></div>
+            <div style="background-color: rgb(205, 37, 149); height: 200px;"></div>
+        </div>
+
+
+        <!-- Create a grid with 3 columns. Width 50px | remaining space | 75px -->
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+            column-gap: 5px;
+        ">
+            <div style="background-color: rgb(255,132,32); height: 200px;"></div>
+            <div style="background-color: rgb(69, 206, 176); height: 200px;"></div>
+            <div style="background-color: rgb(205, 37, 149); height: 200px;"></div>
+        </div>
+
+        <!-- Create a grid with 4 equal column that take up the entire page. Space between columns =20px, space between rows = 10px -->
+
+        <div style="
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        ">
+            <div style="background-color: rgb(255,132,32); height: 200px;"></div>
+            <div style="background-color: rgb(69, 206, 176); height: 200px;"></div>
+            <div style="background-color: rgb(205, 37, 149); height: 200px;"></div>
+            <div style="background-color: rgb(255,132,32); height: 200px;"></div>
+            <div style="background-color: rgb(69, 206, 176); height: 200px;"></div>
+            <div style="background-color: rgb(205, 37, 149); height: 200px;"></div>
+            <div style="background-color: rgb(255,132,32); height: 200px;"></div>
+            <div style="background-color: rgb(69, 206, 176); height: 200px;"></div>
+        </div>
+
+
+        <hr>
+        <hr>
+
+        
+    </body>
+</html>
