@@ -9,22 +9,62 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="/styles/video.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/general.css">
         <style>
-            
-            
+            p {
+                font-family: Roboto, Arial;
+            }
+            .searchbox {
+                display: block;
+            }
+            .thumbnail {
+                width: 100%;
+            }
+            .video-title {
+                margin-top: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+            .channel-picture {
+            }
+            .video-info {
+            }
+
+            .channel-profile {
+                width: 100%;
+                max-width: 40px;
+                border-radius: 50%;
+            }
+
+            .video-author {
+                color: rgb(80, 76, 76);
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .video-stats {
+                color: rgb(80, 76, 76);
+                font-size: 14px;
+                margin-top: 4px;
+            }
+
+            .video-info-grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                margin-top: 5px; /* temporary solution */
+            }
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 15px;
+                row-gap: 15px;
+            }
         </style>
     </head>
     <body>
-        <div class="nav-bar">
-            <div class="left-section">left section</div>
-            <div class="center-section">
-                <input class="searchbox" type="text" placeholder="Search" />
-            </div>
-            <div class="right-section">rigth section</div>
-        </div>
+        <input class="searchbox" type="text" placeholder="Search" />
         <div class="video-grid">
             <div class="video-preview">
                 <div>
