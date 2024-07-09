@@ -1,0 +1,28 @@
+.searchbox {
+ display: block;
+}
+
+.nav-bar {
+ display: flex;
+ height: 57px;
+ justify-content: space-between;
+}
+
+.left-section {
+ background-color: lightblue;
+ flex: 1;
+ max-width: 162px;
+}
+
+.center-section{
+ background-color: lightgreen;
+ flex: 1;
+ margin-right: 20px;
+ margin-left: 60px;
+ max-width: 470px;
+}
+.right-section {
+ background-color: lightpink;
+ flex: 1;
+ max-width: 182px;
+}
