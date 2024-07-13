@@ -100,3 +100,19 @@
     height: 30px;
     border-radius: 15px;
 }
+
+.notification-box {
+    position: relative;
+}
+
+.notification-number {
+    position: absolute;
+    top: -2px;
+    right: -2.5px;
+    background-color: rgb(204, 0, 0);
+    padding: 2px 5px;
+    border-radius: 60%;
+    color: white;
+    font-size: 10px;
+    font-family: Robot, Arial;
+}
