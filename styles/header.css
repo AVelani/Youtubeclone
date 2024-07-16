@@ -48,6 +48,9 @@
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-btn {
@@ -59,7 +62,35 @@
     cursor: pointer;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+ .tooltip {
+    position: absolute;
+    background-color: rgba(73, 72, 72, 0.95);
+    padding: 9px 6px;
+    color: white;
+    font-family: Roboto, Arial;
+    border-radius: 2px;
+    bottom: -55px;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+    text-wrap: nowrap;
+    font-size: 12px;
+}
+
+.mic-btn .tooltip {
+    bottom: -45px;
+}
+
+.search-btn:hover .tooltip, .mic-btn:hover .tooltip{
+    opacity: 1;
+}
+
 
 .searchbox {
     flex: 1;
@@ -81,12 +112,10 @@
 
 .search-ico {
     height: 24px;
-    margin-top: 3px;
 }
 
 .mic-ico {
     height: 24px;
-    margin-top: 3px;
 }
 
 .searchbox:focus {
