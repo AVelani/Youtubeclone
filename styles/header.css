@@ -2,8 +2,8 @@
     display: flex;
     height: 57px;
     justify-content: space-between;
-
-    background-color: white;
+    color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     left: 0;
     right: 0;
